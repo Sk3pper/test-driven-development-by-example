@@ -1,9 +1,5 @@
-# macos files
+# macOS files
 .DS_Store
 
 # compiled jave files
 *.class
-
-# JUnit lib directory
-lib/
-
