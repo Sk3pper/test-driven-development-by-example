@@ -14,7 +14,7 @@ Compile&Execute
 - [ ] hasCode() 
 - [ ] Equal null
 - [ ] Equal object
-- [ ] **~~5 CHF * 2 = 10 CHF~~**
+- [ ] ~~5 CHF * 2 = 10 CHF~~
 - [ ] Dollar/Franc duplication 
 - [x] **~~Common equals~~**
 - [ ] Common times 
