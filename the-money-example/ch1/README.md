@@ -1,5 +1,5 @@
 # Run JUnit tests
-Compile&Executes
+Compile&Execute
 ```
 ❯ ./compile_and_run_tests.sh TestDollar.java the-money-example/ch1
 ```
