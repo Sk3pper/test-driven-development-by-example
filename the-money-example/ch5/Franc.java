@@ -1,5 +1,5 @@
 public class Franc {
-    int amount;
+    private int amount;
 
     Franc(int amount){
         this.amount = amount;

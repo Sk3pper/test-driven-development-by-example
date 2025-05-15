@@ -1,5 +1,5 @@
 public class Dollar {
-    private int amount;
+    int amount;
 
     Dollar(int amount){
         this.amount = amount;
