@@ -15,7 +15,7 @@ Compile&Execute
 - [ ] Equal null
 - [ ] Equal object
 - [ ] ~~5 CHF * 2 = 10 CHF~~
-- [x] **~~Dollar/Franc duplication~~**
+- [x] **Dollar/Franc duplication**
 - [ ] ~~Common equals~~
 - [ ] Common times
 - [ ] ~~Compare Francs and Dollars~~
