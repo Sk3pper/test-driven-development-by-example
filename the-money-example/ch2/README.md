@@ -12,16 +12,17 @@ Compile&Executes
 - [ ] Money rounding?
 
 # Lessons learned
+- TDD's goal: Write clean code that works
+- Divide and conquer the problem
+  1. First, solve the "that works" part
+  2. Second, solve the "clean code" part
 - TDD cycle
   1. Write a test. Invent the interface you wish you had.
   2. Make it run. Getting the bar green in seconds (*).
   3. Make it right. Remove the duplication that you have introduced, and get to green quickly.
-  
-- Divide and conquer the problem
-  1. First, solve the "that works" part
-  2. Second, solve the "clean code" part
+
 
 (*) Three strategies to quickly getting it to run
 1. Fake it - Return a constatn and gradually replace constants with variables until you have the real code.
 2. Use Obvious Implementation - Type in the real implementation.
-3. Triangulation
+3. Triangulation (see ch3)
