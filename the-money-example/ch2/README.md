@@ -23,6 +23,6 @@ Compile&Executes
 
 
 (*) Three strategies to quickly getting it to run
-1. Fake it - Return a constatn and gradually replace constants with variables until you have the real code.
+1. Fake it - Return a constant and gradually replace constants with variables until you have the real code.
 2. Use Obvious Implementation - Type in the real implementation.
 3. Triangulation (see ch3)

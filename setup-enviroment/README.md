@@ -30,7 +30,7 @@ Hello World!!
 ### I way
 - Install '**Test Runner for Java**' VSCode extension
 - Setup Testing>Enable Java Tests>JUnit
-- A lib direcory popped up, rename do libs
+- A lib directory popped up, rename do libs
 
 ### II way
 - Use libs file from this repository
