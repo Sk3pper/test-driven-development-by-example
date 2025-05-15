@@ -20,7 +20,7 @@ Compile&Execute
 - [ ] ~~Common times~~
 - [ ] ~~Compare Francs and Dollars~~
 - [ ] ~~Currency?~~
-- [ ] Delete testFrancMultiplication?
+- [x] **~~Delete testFrancMultiplication?~~**
 
 ** New item
 
