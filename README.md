@@ -2,6 +2,14 @@
 Welcome to the repository for the book Test-Driven Development by Example by Kent Beck.
 This repo contains a step-by-step walkthrough of the concepts, exercises, and code examples presented in the book.
 
+# 🔄 Process to keep in mind
+The TDD cycle is as follows:
+1. Add a little test.
+2. Run all tests and fail.
+3. Make a change.
+4. Run the tests and succeed.
+5. Refactor to remove duplication.
+
 # What You'll Find Here
 
 ## 🔧 setup-environment/
