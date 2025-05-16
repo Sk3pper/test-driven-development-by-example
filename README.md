@@ -18,7 +18,7 @@ The TDD cycle is as follows:
 A minimal, terminal-based setup guide to help you follow along with the book.
 This guide walks you through creating a clean and distraction-free development environment to fully focus on TDD fundamentals.
 
-## 💸 in-the-money-example/
+## 💸 in the-money-example/
 This directory contains the main coding example from the book, organized chapter by chapter. Each folder includes:
 
 - ✅ The final version of the code for that chapter
