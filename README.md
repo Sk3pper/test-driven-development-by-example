@@ -10,6 +10,8 @@ The TDD cycle is as follows:
 4. Run the tests and succeed.
 5. Refactor to remove duplication.
 
+<img src="https://sk3pper.github.io//posts/software-development/test-driven-development/images/tdd-icon-hero.png" width="300">
+
 # What You'll Find Here
 
 ## 🔧 setup-environment/
