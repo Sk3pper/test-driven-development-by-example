@@ -1,7 +1,7 @@
 # Run JUnit tests
 Compile&Execute
 ```
-❯ ./compile_and_run_tests.sh TestDollar.java the-money-example/ch15
+❯ ./compile_and_run_tests.sh TestDollar.java the-money-example/ch16
 ```
 
 # To-do list
