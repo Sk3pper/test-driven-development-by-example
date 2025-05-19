@@ -15,13 +15,13 @@ class WasRun(TestCase):
     def __init__(self, name):
         self.wasRun = None
         TestCase.__init__(self, name=name)
-    
-    def testMethod(self):
-        self.wasRun = 1
         
     def setUp(self):
         self.wasSetUp = 1
         
+    def testMethod(self):
+        self.wasRun = 1
+
 class TestCaseTest(TestCase):
 
     def testRunning(self):

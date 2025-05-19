@@ -29,4 +29,4 @@ class TestCaseTest(TestCase):
         
 if __name__ == "__main__":
     TestCaseTest("testRunning").run()
-    TestCaseTest("testSetup").run()
+    TestCaseTest("testSetup").run() # [ok] AttributeError: 'WasRun' object has no attribute 'wasSetUp'
