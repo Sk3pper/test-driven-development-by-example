@@ -1,6 +1,8 @@
 # Run
 ```
-❯ python run_6.py 
+❯ python run_6.py
+❯ python run_7.py 
+❯ python run_8.py 
 ```
 
 # To-do list
