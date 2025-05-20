@@ -24,6 +24,7 @@ class TestCase:
     
 class WasRun(TestCase):
     def __init__(self, name):
+        self.log = ""
         TestCase.__init__(self, name=name)
         
     def setUp(self):
@@ -40,7 +41,6 @@ class WasRun(TestCase):
     
 class BrokenSetUpWasRun(WasRun):
     def setUp(self):
-        self.log = "setUp "
         raise Exception
 
 class TestCaseTest(TestCase):
