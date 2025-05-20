@@ -4,3 +4,6 @@
 # compiled jave files
 *.class
 build-output
+
+# vscode files
+.vscode

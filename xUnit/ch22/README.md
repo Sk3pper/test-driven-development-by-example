@@ -1,7 +1,7 @@
 # Run
 ```
-❯ python run_12.py 
-❯ python run_13.py 
+❯ python run_14.py
+❯ python run_15.py
 ```
 
 # To-do list
@@ -10,10 +10,12 @@
 - [ ] ~~Invoke tearDown afterward~~
 - [ ] Invoke tearDown even if the test method fails
 - [ ] Run multiple tests
-- [x] **~~Report collected results~~**
+- [ ] ~~Report collected results~~
 - [ ] ~~Log string in WasRun~~
-- [ ] Report failed tests **
+- [x] **~~Report failed tests~~**
+- [ ] Catch and report setUp errors
 
 ** New item
 
 # Lessons learned
+- You can't type in code unless there is a broken tests.
