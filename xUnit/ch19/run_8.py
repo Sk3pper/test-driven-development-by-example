@@ -23,7 +23,7 @@ class WasRun(TestCase):
         
 class TestCaseTest(TestCase):
     def setUp(self):
-        # We can create the WasRun in setUpm and use it in the test methods. Each test method is run in a clean instance of TestCaseTest, so there is no way the two tests can be coupled.
+        # We can create the WasRun in setUp and use it in the test methods. Each test method is run in a clean instance of TestCaseTest, so there is no way the two tests can be coupled.
         self.test = WasRun("testMethod")
 
     def testRunning(self):

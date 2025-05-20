@@ -79,7 +79,6 @@ class TestCaseTest(TestCase):
         test = BrokenSetUpWasRun("testMethod") 
         result = test.run()
         assert("1 run, 1 failed (setUp: ERROR)" == result.summary())
-        return result
         
 class TestResult:
     def __init__(self):

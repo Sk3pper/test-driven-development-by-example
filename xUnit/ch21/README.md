@@ -1,7 +1,7 @@
 # Run
 ```
 ❯ python run_12.py 
-❯ python run_13.py 
+❯ python run_13.py # Exception is ok here
 ```
 
 # To-do list

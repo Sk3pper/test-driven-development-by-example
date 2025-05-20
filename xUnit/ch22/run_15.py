@@ -38,10 +38,7 @@ class WasRun(TestCase):
     def testBrokenMethod(self):
         raise Exception
         
-class TestCaseTest(TestCase):
-    def setUp(self):
-        self.test = WasRun("testMethod")
-        
+class TestCaseTest(TestCase):    
     def testTemplateMethod(self):
         test = WasRun("testMethod") 
         test.run()

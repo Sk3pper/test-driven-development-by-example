@@ -27,10 +27,7 @@ class WasRun(TestCase):
     def tearDown(self):
         self.log = self.log + "tearDown "
         
-class TestCaseTest(TestCase):
-    def setUp(self):
-        self.test = WasRun("testMethod")
-        
+class TestCaseTest(TestCase):        
     def testTemplateMethod(self):
         test = WasRun("testMethod") 
         test.run()
