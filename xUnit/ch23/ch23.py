@@ -82,7 +82,6 @@ class TestSuite:
         return result
 
 class TestCaseTest(TestCase):
-    
     def setUp(self):
         self.result = TestResult()
 
@@ -94,29 +93,29 @@ class TestCaseTest(TestCase):
     def testResult(self):
         test = WasRun("testMethod") 
         test.run(self.result)
-        assert("1 run, 0 failed (setUp: OK)" == result.summary())
+        assert("1 run, 0 failed (setUp: OK)" == self.result.summary())
         
     def testFailedResult(self):
         test = WasRun("testBrokenMethod") 
         test.run(self.result)
-        assert("1 run, 1 failed (setUp: OK)" == result.summary())
+        assert("1 run, 1 failed (setUp: OK)" == self.result.summary())
         
     def testFailedResultFormatting(self):
-        result.testStarted()
-        result.testFailed()
-        assert("1 run, 1 failed (setUp: OK)" == result.summary())
+        self.result.testStarted()
+        self.result.testFailed()
+        assert("1 run, 1 failed (setUp: OK)" == self.result.summary())
         
     def testSetUpError(self):
         test = BrokenSetUpWasRun("testMethod") 
         test.run(self.result)
-        assert("1 run, 1 failed (setUp: ERROR)" == result.summary())
+        assert("1 run, 1 failed (setUp: ERROR)" == self.result.summary())
         
     def testSuite(self):
         suite = TestSuite()
         suite.add(WasRun("testMethod"))
         suite.add(WasRun("testBrokenMethod"))
         suite.run(self.result)
-        assert("2 run, 1 failed" == result.summary())
+        assert("2 run, 1 failed" == self.result.summary())
         
 if __name__ == "__main__":
     
