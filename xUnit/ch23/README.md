@@ -13,6 +13,7 @@
 - [ ] ~~Log string in WasRun~~
 - [ ] ~~Report failed tests~~
 - [ ] ~~Catch and report setUp errors~~
+- [ ] Create TestSuite from a TestCase class **
 
 ** New item
 

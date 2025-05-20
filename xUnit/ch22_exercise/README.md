@@ -263,7 +263,6 @@ def testFailedResultFormatting(self):
     result.testFailed()
     assert("1 run, 1 failed (setUp: OK)" == result.summary())
 ```
-
 ### Step4: Run the tests and succeed.
 ```bash
     testTemplateMethod: 		1 run, 0 failed (setUp: OK)
