@@ -18,11 +18,13 @@ The TDD cycle is as follows:
 A minimal, terminal-based setup guide to help you follow along with the book.
 This guide walks you through creating a clean and distraction-free development environment to fully focus on TDD fundamentals.
 
-## 💸 in the-money-example/
-This directory contains the main coding example from the book, organized chapter by chapter. Each folder includes:
+## 👨‍💻 in-the-money-example/ and xUnit/
+These directories contain step-by-step coding examples inspired by the book’s exercises, organized chapter by chapter. Each folder includes:
 
 - ✅ The final version of the code for that chapter
 - 🧪 Tests you can run yourself
-- 🔍 Clear progression between chapters to observe what changed and why
+- 🔍 A clear progression between chapters to observe what changed and why
 
-This structure helps you compare versions and understand the evolution of the code, giving insight into the TDD thought process.
+This structure helps you compare versions and understand the evolution of the code, providing insight into the TDD thought process.
+
+*Note*: The xUnit/ directory additionally contains an example solution for the **“Catch and report setUp errors”** task, showing how to properly handle exceptions raised during the setUp phase of testing.
