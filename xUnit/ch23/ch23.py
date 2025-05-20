@@ -20,7 +20,6 @@ class TestCase:
             result.testFailed()
 
         self.tearDown()
-        return result
         
     def setUp(self):
         pass
@@ -78,8 +77,6 @@ class TestSuite:
     def run(self, result):     
         for test in self.tests:
             test.run(result)
-            
-        return result
 
 class TestCaseTest(TestCase):
     def setUp(self):
@@ -115,7 +112,7 @@ class TestCaseTest(TestCase):
         suite.add(WasRun("testMethod"))
         suite.add(WasRun("testBrokenMethod"))
         suite.run(self.result)
-        assert("2 run, 1 failed" == self.result.summary())
+        assert("2 run, 1 failed (setUp: OK)" == self.result.summary())
         
 if __name__ == "__main__":
     
@@ -125,9 +122,9 @@ if __name__ == "__main__":
     suite.add(TestCaseTest("testFailedResultFormatting"))
     suite.add(TestCaseTest("testFailedResult"))
     suite.add(TestCaseTest("testSetUpError"))
+    suite.add(TestCaseTest("testSuite"))
     
     result = TestResult()
     suite.run(result=result)
     
     print(result.summary())
-    
