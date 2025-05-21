@@ -16,11 +16,11 @@
 - [x] **~~Create TestSuite from a TestCase class~~**
 
 # Exercise: 
-The last item to solve is **Create TestSuite from a TestCase class**: constructing a suite automatically given a test class. 
+The last task to complete is creating a **Create TestSuite from a TestCase class**s — that is, constructing a suite automatically from a test class.
 
 ## Epoch 1
 ### Step1: Add a little test.
-The first step is the hardest one for who approach the TDD style. As Kent Beck writes in the book that **we have to image the perfect interface** (also if it is not already in place) for our operation. We are telling ourselves a **story** about how the operation will look from outside. 
+The first step is often the hardest for those approaching the TDD style. As Kent Beck writes in the book, **we have to imagine the perfect interface** — even if it doesn't exist yet — for the operation we're about to implement. We're telling ourselves a **story** about how the operation will look from the outside.
 
 We image a TestSuite constructor takes in input the TestCase class.
 
@@ -32,17 +32,16 @@ def testSuiteFromTestCase(self):
 ```
 
 ### Step2: Run all tests and fail
-Running all the test Python informs us that the `TestSuite.__init__() takes 1 positional argument but 2 were given`. The TestSuite constructor does not handle the TestCase class name as input argument. We can change it adding the names as input parameter
+When we run all the tests, Python tells us: `TestSuite.__init__() takes 1 positional argument but 2 were given`. This means that the TestSuite constructor doesn't yet handle a TestCase class name as an input argument. To fix this, we can modify the constructor to accept the class name as a parameter:
 ```python
 def __init__(self, testCase):
     self.tests = []
     self.testCase = testCase
 ```
-
-With this code in place we have broken the `testSuite` since we do not pass the TestCase name class.
+With this change in place, we’ve broken the `testSuite` test, since we're no longer passing the TestCase class name to the constructor.
 
 ### Step3: Make changes and run tests
-I do not like the code in this way. I want to maintain the constructor free so we apply a little change
+I don't like the code in its current form. I prefer to keep the constructor clean, so we apply a small change instead.
 
 ```python
 def __init__(self, testCaseClass=None):
@@ -52,9 +51,9 @@ def __init__(self, testCaseClass=None):
     if testCaseClass:
         self.testCaseClass = testCaseClass
 ```
-
-With this change we can decide to pass or not to pass the `testCaseClass` as input argument.
-When we pass `testCaseClass` we can proceed to parse it and extract all the tests to add to the suite. The rational is that given a testCase name class we try to find all test methods that is all methods that starting with 'test' word.
+With this change, we can choose whether or not to pass the `testCaseClass` as an input argument.
+When it is provided, we can parse the class and extract all the tests to add to the suite.
+The idea is that, given a test case class, we look for all methods whose names start with the word `'test'`.
 
 ```python
 def loadTestsFromTestCase(self, testCaseClass):
@@ -68,7 +67,7 @@ def loadTestsFromTestCase(self, testCaseClass):
         self.add(test_instance)
 ```
 
-The ouput is the following:
+The output is the following:
 ```bash
 testTemplateMethod: 			    1 run, 0 failed
 testResult: 				        1 run, 0 failed
@@ -80,11 +79,10 @@ testSuite: 				            1 run, 0 failed
 maximum recursion depth exceeded
 testSuiteFromTestCase: 			    1 run, 1 failed
 ```
-
-The problem is that the test `testSuiteFromTestCase` is recursively called. We need to change the name to `suiteFromTestCaseTest`.
+The problem is that the test `testSuiteFromTestCase` is being called recursively. To fix this, we need to rename it to `suiteFromTestCaseTest`.
 
 ### Step4: Run the tests and succeed
-Running the tests
+Running the tests:
 ```python
 suite = TestSuite()
 
@@ -102,13 +100,12 @@ suite.run(result=result)
 
 print(result.summary())
 ```
-
-Now we have 
+We have the following output:
 ```bash
 8 run, 0 failed
 ```
+Now we can update the code that executes the test to utilize the `TestSuite`.
 
-We can change the code that launch the test
 ```python
 suite = TestSuite(TestCaseTest)
 result = TestResult()
@@ -116,7 +113,8 @@ suite.run(result=result)
 print(result.summary())
 ```
 
-Keep in mind to test also the new test we need to add it separably
+Remember that to test the new test case, it must be added separately.
+
 ```python
 suite = TestSuite(TestCaseTest)
 result = TestResult()
@@ -126,10 +124,10 @@ print(result.summary())
 ```
 
 ## Epoch 2
-I do not like to add `suiteFromTestCaseTest` separately. I want to find a better solution
+I’m not comfortable with adding `suiteFromTestCaseTest` separately; I would prefer to find a better approach.
 
 ### Step1: Add a little test.
-Changing the name to `testSuiteFromTestCase` we restore the recursion problem
+Renaming it to `testSuiteFromTestCase` brings back the recursion issue.
 
 ### Step2: Run all tests and fail
 
@@ -166,7 +164,7 @@ def testSuiteFromTestCase(self):
 ```
 
 ### Step4: Run the tests and succeed
-Running
+Running the TestSuite by passing TestCaseTest as an argument.
 ```python
 suite = TestSuite(TestCaseTest)
 result = TestResult()
