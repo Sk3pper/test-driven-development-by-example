@@ -27,4 +27,10 @@ These directories contain step-by-step coding examples inspired by the book’s 
 
 This structure helps you compare versions and understand the evolution of the code, providing insight into the TDD thought process.
 
-*Note*: The xUnit/ directory additionally contains an example solution for the **“Catch and report setUp errors”** task, showing how to properly handle exceptions raised during the setUp phase of testing.
+*Note*:The `xUnit/` directory also includes example solutions for the following tasks:
+
+- **“Catch and report setUp errors”**
+- **Invoke tearDown even if the test method fails**
+- **Create TestSuite from a TestCase class**
+ 
+These examples demonstrate how to apply *Test-Driven Development (TDD) principles* in practice—step by step. They also served as a way for me to better understand the entire process and train myself through hands-on exercises.
