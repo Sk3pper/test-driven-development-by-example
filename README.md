@@ -29,7 +29,7 @@ This structure helps you compare versions and understand the evolution of the co
 
 *Note*:The `xUnit/` directory also includes example solutions for the following tasks:
 
-- **“Catch and report setUp errors”**
+- **Catch and report setUp errors**
 - **Invoke tearDown even if the test method fails**
 - **Create TestSuite from a TestCase class**
  
