@@ -16,7 +16,7 @@
 - [x] **~~Create TestSuite from a TestCase class~~**
 
 # Exercise: 
-The last task to complete is creating a **Create TestSuite from a TestCase class**s — that is, constructing a suite automatically from a test class.
+The last task to complete is creating a **Create TestSuite from a TestCase class** — that is, constructing a suite automatically from a test class.
 
 ## Epoch 1
 ### Step1: Add a little test.

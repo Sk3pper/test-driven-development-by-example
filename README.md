@@ -16,7 +16,7 @@ The TDD cycle is as follows:
 
 ## 🔧 setup-environment/
 A minimal, terminal-based setup guide to help you follow along with the book.
-This guide walks you through creating a clean and distraction-free development environment to fully focus on TDD fundamentals.
+This guide walks you through creating a clean development environment to fully focus on TDD fundamentals.
 
 ## 👨‍💻 in-the-money-example/ and xUnit/
 These directories contain step-by-step coding examples inspired by the book’s exercises, organized chapter by chapter. Each folder includes:
@@ -27,10 +27,11 @@ These directories contain step-by-step coding examples inspired by the book’s 
 
 This structure helps you compare versions and understand the evolution of the code, providing insight into the TDD thought process.
 
-*Note*:The `xUnit/` directory also includes example solutions for the following tasks:
+*Note*: The `xUnit/` directory also includes solutions for the following tasks:
 
-- **Catch and report setUp errors**
-- **Invoke tearDown even if the test method fails**
-- **Create TestSuite from a TestCase class**
+- **Catch and report setUp errors** [[source code]](https://github.com/Sk3pper/test-driven-development-by-example/tree/main/xUnit/ch22_exercise) [[article]](https://sk3pper.github.io/posts/software-development/test-driven-development/exercise-1/)
+- **Invoke tearDown even if the test method fails** [[source code]](https://github.com/Sk3pper/test-driven-development-by-example/tree/main/xUnit/ch23_exerciseA) [[article]](https://sk3pper.github.io/posts/software-development/test-driven-development/exercise-2/)
+- **Create TestSuite from a TestCase class** [[source code]](https://github.com/Sk3pper/test-driven-development-by-example/tree/main/xUnit/ch23_exerciseB) [[article]](https://sk3pper.github.io/posts/software-development/test-driven-development/exercise-3/)
+
  
 These examples demonstrate how to apply *Test-Driven Development (TDD) principles* in practice—step by step. They also served as a way for me to better understand the entire process and train myself through hands-on exercises.

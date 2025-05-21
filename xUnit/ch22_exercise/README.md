@@ -19,6 +19,9 @@
 ** New item
 
 # Exercise: 
+Implement the item:
+- [x] **~~Catch and report setUp errors~~**
+
 There is a subtlety hidden inside this method. The way it is written, if a disaster happens during **setUp(),** then the exception won't be caught. That can't be what we mean - we want our tests to run independently of one another. I'll leave that next test and its implementation as an exercise for you (sore fingers, again).
 
 Make in practice what we learn so far.
