@@ -74,12 +74,12 @@ class TestSuite:
     def loadTestsFromTestCase(self, testCaseClass):
         self.testCaseClass = testCaseClass
         
-        test_methods = [method for method in dir(self.testCaseClass) 
+        testMethods = [method for method in dir(self.testCaseClass) 
                         if method.startswith('test') and callable(getattr(self.testCaseClass, method))]
 
-        for method_name in test_methods:
-            test_instance = self.testCaseClass(method_name)
-            self.add(test_instance)
+        for methodName in testMethods:
+            testInstance = self.testCaseClass(methodName)
+            self.add(testInstance)
     
     def run(self, result):
         for test in self.tests:
