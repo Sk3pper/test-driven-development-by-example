@@ -6,10 +6,10 @@ This repo contains a step-by-step walkthrough of the concepts, exercises, and co
 Read article for further details [here](https://sk3pper.github.io/posts/software-development/test-driven-development/test-driven-development-by-example-init/).
 
 # 🔄 Process to keep in mind
- <strong>The TDD cycle is:</strong>
 <table>
   <tr>
     <td style="vertical-align: top;">
+      <strong>The TDD cycle is:</strong>
       <ol>
         <li>Add a little test.</li>
         <li>Run all tests and fail.</li>
