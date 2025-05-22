@@ -8,22 +8,21 @@ Read article for further details [here](https://sk3pper.github.io/posts/software
 # 🔄 Process to keep in mind
 The TDD cycle is
 
-<table style="border: none">
-    <tr>
-        <td>
-            <table style="border: none">
-                <tr><td style="border: none"> 1. Add a little test.             </td> </tr>
-                <tr><td style="border: none"> 2. Run all tests and fail.        </td></tr>
-                <tr><td style="border: none"> 3. Make a change.                 </td></tr>
-                <tr><td style="border: none"> 4. Run the tests and succeed.     </td></tr>
-                <tr><td style="border: none"> 5. Refactor to remove duplication.</td></tr>
-            </table>
-        </td>
-        <td style="border: none">
-            <img src="https://sk3pper.github.io/posts/software-development/test-driven-development/test-driven-development-by-example-init/images/tdd-icon.png" width="300">
-        </td>
-    </tr>
-</table>
+<p align="left" style="display: flex; gap: 20px; align-items: flex-start;">
+  <div style="flex: 1;">
+    <strong>The TDD cycle is:</strong>
+    <ol>
+      <li>Add a little test.</li>
+      <li>Run all tests and fail.</li>
+      <li>Make a change.</li>
+      <li>Run the tests and succeed.</li>
+      <li>Refactor to remove duplication.</li>
+    </ol>
+  </div>
+  <div style="flex: 1;">
+    <img src="https://sk3pper.github.io/posts/software-development/test-driven-development/test-driven-development-by-example-init/images/tdd-icon.png" width="300">
+  </div>
+</p>
 
 # What You'll Find Here
 
