@@ -2,6 +2,9 @@
 Welcome to the repository for the book Test-Driven Development by Example by Kent Beck.
 This repo contains a step-by-step walkthrough of the concepts, exercises, and code examples presented in the book.
 
+# 📝 Related Article
+Read article for further details [here](https://sk3pper.github.io/posts/software-development/test-driven-development/test-driven-development-by-example-init/).
+
 # 🔄 Process to keep in mind
 The TDD cycle is as follows:
 1. Add a little test.
@@ -10,7 +13,7 @@ The TDD cycle is as follows:
 4. Run the tests and succeed.
 5. Refactor to remove duplication.
 
-<img src="https://sk3pper.github.io//posts/software-development/test-driven-development/images/tdd-icon-hero.png" width="300">
+<img src="https://sk3pper.github.io/posts/software-development/test-driven-development/test-driven-development-by-example-init/images/tdd-icon.png" width="300">
 
 # What You'll Find Here
 
