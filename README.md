@@ -8,18 +8,23 @@ Read article for further details [here](https://sk3pper.github.io/posts/software
 # 🔄 Process to keep in mind
 The TDD cycle is
 
-<table style="border: none;">
+<style>
+  table td {
+    border: none !important;
+  }
+</style>
+<table style="border: none">
     <tr>
         <td>
-            <table style="border: none;">
-                <tr><td style="border: none;"> 1. Add a little test.             </td> </tr>
-                <tr><td style="border: none;"> 2. Run all tests and fail.        </td></tr>
-                <tr><td style="border: none;"> 3. Make a change.                 </td></tr>
-                <tr><td style="border: none;"> 4. Run the tests and succeed.     </td></tr>
-                <tr><td style="border: none;"> 5. Refactor to remove duplication.</td></tr>
+            <table style="border: none">
+                <tr><td style="border: none"> 1. Add a little test.             </td> </tr>
+                <tr><td style="border: none"> 2. Run all tests and fail.        </td></tr>
+                <tr><td style="border: none"> 3. Make a change.                 </td></tr>
+                <tr><td style="border: none"> 4. Run the tests and succeed.     </td></tr>
+                <tr><td style="border: none"> 5. Refactor to remove duplication.</td></tr>
             </table>
         </td>
-        <td style="border: none;">
+        <td style="border: none">
             <img src="https://sk3pper.github.io/posts/software-development/test-driven-development/test-driven-development-by-example-init/images/tdd-icon.png" width="300">
         </td>
     </tr>
