@@ -8,10 +8,10 @@ Read article for further details [here](https://sk3pper.github.io/posts/software
 # 🔄 Process to keep in mind
 The TDD cycle is
 
-<table cellspacing="0" cellpadding="0">
+<table border="0">
     <tr>
         <td>
-            <table cellspacing="0" cellpadding="0">
+            <table border="0">
                 <tr><td> 1. Add a little test.             </td> </tr>
                 <tr><td> 2. Run all tests and fail.        </td></tr>
                 <tr><td> 3. Make a change.                 </td></tr>
