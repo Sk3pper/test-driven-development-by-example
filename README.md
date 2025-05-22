@@ -8,11 +8,6 @@ Read article for further details [here](https://sk3pper.github.io/posts/software
 # 🔄 Process to keep in mind
 The TDD cycle is
 
-<style>
-  table td {
-    border: none !important;
-  }
-</style>
 <table style="border: none">
     <tr>
         <td>
